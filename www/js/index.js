@@ -1,4 +1,12 @@
-document.getElementById("nav").innerHTML =
-"<ul id='menu'>" +
-"<li><a href='pages/page1.html'>Page 1</a></li>" +
-"</ul>";
+function navigate(page) {
+    if (page == 1){
+        document.getElementById("nav").innerHTML = 
+            "<p>This is the stuff of page1</p>";
+    } else if (page == 2){
+        document.getElementById("nav").innerHTML = 
+            "<p>This is the page 2 stuff</p>";        
+    } else {
+        document.getElementById("nav").innerHTML = 
+            "<p> Error in request</p>";
+    }
+}
